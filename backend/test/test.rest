@@ -11,3 +11,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZ
 ### Get all tests for logged-in user
 GET http://localhost:3000/api/test/all
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDI0MzgxNiwiZXhwIjoxNzY0ODQ4NjE2fQ.VRl5P7riJFZLoZUcicqYIhzF3YRtNcERvcL-GiorQcg
+
+
+### Get a single test by ID
+GET http://localhost:3000/api/test/69283b85989504fc27b4cc49
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDI0MzgxNiwiZXhwIjoxNzY0ODQ4NjE2fQ.VRl5P7riJFZLoZUcicqYIhzF3YRtNcERvcL-GiorQcg
