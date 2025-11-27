@@ -6,6 +6,7 @@ dotenv.config({ path: './' })
 import { connectToDb } from './config/db.js'
 import authRouter from './routes/user.route.js'
 import testRouter from './routes/test.route.js'
+import questionRouter from './routes/question.route.js'
 
 const app = express()
 
@@ -14,10 +15,7 @@ app.use(express.json())
 
 app.use('/api/auth', authRouter)
 app.use('/api/test', testRouter)
-
-app.get('/', (req, res) => {
-	res.send('dziala')
-})
+app.use('/api/questions', questionRouter)
 
 const PORT = process.env.PORT || 3000
 

@@ -1,4 +1,6 @@
 import Test from '../models/test.model.js'
+import Question from '../models/question.model.js'
+import Submission from '../models/submission.model.js'
 import crypto from 'crypto'
 
 export const createTest = async (req, res) => {
@@ -101,7 +103,6 @@ export const deleteTest = async (req, res) => {
 		}
 
 		const test = await Test.findById(id)
-
 		if (!test) {
 			return res.status(404).json({ message: 'Test not found' })
 		}
@@ -110,9 +111,13 @@ export const deleteTest = async (req, res) => {
 			return res.status(403).json({ message: 'Access denied' })
 		}
 
+		await Question.deleteMany({ testId: test._id })
+
+		await Submission.deleteMany({ testId: test._id })
+
 		await Test.findByIdAndDelete(id)
 
-		return res.status(200).json({ message: 'Test deleted successfully' })
+		return res.status(200).json({ message: 'Test and all questions deleted successfully' })
 	} catch (err) {
 		console.error('Error deleting test:', err)
 		return res.status(500).json({ message: 'Failed to delete test' })

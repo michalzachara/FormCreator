@@ -14,7 +14,7 @@ const submissionSchema = new Schema(
 			required: true,
 			trim: true,
 		},
-    studentSurname: {
+		studentSurname: {
 			type: String,
 			required: true,
 			trim: true,
