@@ -1,3 +1,7 @@
+import mongoose from 'mongoose'
+
+const { Schema } = mongoose
+
 const submissionSchema = new Schema(
 	{
 		testId: {

@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:3000/api/auth
+# @token = {{login.response.body.token}}
+
+###
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "Test123!",
+  "name": "Jan",
+  "surname": "Kowalski"
+}
+
+###
+# LOGIN — zapisze token do zmiennej @token
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "Test123!"
+}
+
+###
+# Przykładowy request z autoryzacją JWT
+# GET http://localhost:5000/api/protected-route
+# Authorization: Bearer {{token}}

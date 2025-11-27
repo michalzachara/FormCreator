@@ -1,0 +1,13 @@
+### Create a new test
+POST http://localhost:3000/api/test/new
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDI0MzgxNiwiZXhwIjoxNzY0ODQ4NjE2fQ.VRl5P7riJFZLoZUcicqYIhzF3YRtNcERvcL-GiorQcg
+
+{
+  "title": "Sample Test",
+  "description": "This is a test description"
+}
+
+### Get all tests for logged-in user
+GET http://localhost:3000/api/test/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDI0MzgxNiwiZXhwIjoxNzY0ODQ4NjE2fQ.VRl5P7riJFZLoZUcicqYIhzF3YRtNcERvcL-GiorQcg

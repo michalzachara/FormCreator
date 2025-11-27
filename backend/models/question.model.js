@@ -1,3 +1,7 @@
+import mongoose from 'mongoose'
+
+const { Schema } = mongoose
+
 const questionSchema = new Schema(
 	{
 		testId: {
@@ -49,4 +53,6 @@ const questionSchema = new Schema(
 	{ timestamps: true }
 )
 
-export default mongoose.model('Question', questionSchema)
+const Question = mongoose.model('Question', questionSchema)
+
+export default Question

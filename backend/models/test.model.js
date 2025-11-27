@@ -1,4 +1,8 @@
-const testSchema = new Schema(
+import mongoose from "mongoose"
+
+const { Schema } = mongoose
+
+const testSchema =  Schema(
   {
     userId: {
       type: Schema.Types.ObjectId,
@@ -31,3 +35,7 @@ const testSchema = new Schema(
   },
   { timestamps: true }
 )
+
+const Test = mongoose.model("Test", testSchema);
+
+export default Test;
