@@ -40,7 +40,7 @@ const questionSchema = new Schema(
 		},
 
 		correctAnswers: {
-			type: [Number],
+			type: [String],
 			required: true,
 			validate: v => Array.isArray(v) && v.length > 0,
 		},

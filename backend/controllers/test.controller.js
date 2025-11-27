@@ -45,6 +45,7 @@ export const getTest = async (req, res) => {
 
 		const test = await Test.findOne({ _id: id }).populate({
 			path: 'questions',
+			match: { testId: id }, 
 			options: { sort: { order: 1 } },
 		})
 

@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:3000/api/test
-@bearer = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDI1MDEzNiwiZXhwIjoxNzY0ODU0OTM2fQ.MhQMk1DLkdSVlvYq6ls0jPzCo3z0aVa3ezVj8fA6IMY
+@bearer = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDI2MjgxNiwiZXhwIjoxNzY0ODY3NjE2fQ.Uj2w_JHSZy8Mast4oANF3OWvdllPTDZ4lemcDTp480s
 @getId = 692852646c562d450bf3146f
 
 ### Create a new test
@@ -41,9 +41,9 @@ Content-Type: application/json
 Authorization: Bearer {{bearer}}
 
 {
-  "text": "What is 2 + 2?",
-  "options": ["2", "3", "4", "5"],
-  "answer": "4",
+  "questionText": "What is 2 + 2?",
+  "answers": ["2", "3", "4", "5"],
+  "correctAnswers": ["4"],
   "order": 1
 }
 
