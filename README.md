@@ -1,6 +1,4 @@
-# 🏋️‍♂️ Metbook - Social App
-
-Test Creator (Simple google form)
+# Test Creator (Simple google form)
 
 ---
 
@@ -13,7 +11,7 @@ git clone https://github.com/michalzachara/FormCreator.git
 cd FormCreator
 ```
 
-Create a `.env` file in the backend folder:
+Create a `.env` file in folder:
 
 ```env
 PORT=3000
