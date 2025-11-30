@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const { Schema } = mongoose
 
-const submissionSchema = new Schema(
+const answerSchema = new Schema(
 	{
 		testId: {
 			type: Schema.Types.ObjectId,
@@ -39,6 +39,6 @@ const submissionSchema = new Schema(
 	},
 	{ timestamps: true }
 )
-const Submission = mongoose.model('Submission', submissionSchema)
+const Answer = mongoose.model('Answer', answerSchema)
 
-export default Submission
+export default Answer

@@ -1,6 +1,6 @@
 import Test from '../models/test.model.js'
 import Question from '../models/question.model.js'
-import Submission from '../models/submission.model.js'
+import Answer from '../models/answer.model.js'
 import crypto from 'crypto'
 
 export const createTest = async (req, res) => {
@@ -45,7 +45,7 @@ export const getTest = async (req, res) => {
 
 		const test = await Test.findOne({ _id: id }).populate({
 			path: 'questions',
-			match: { testId: id }, 
+			match: { testId: id },
 			options: { sort: { order: 1 } },
 		})
 
@@ -114,7 +114,7 @@ export const deleteTest = async (req, res) => {
 
 		await Question.deleteMany({ testId: test._id })
 
-		await Submission.deleteMany({ testId: test._id })
+		await Answer.deleteMany({ testId: test._id })
 
 		await Test.findByIdAndDelete(id)
 

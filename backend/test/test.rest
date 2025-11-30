@@ -1,5 +1,5 @@
 @baseUrl = http://localhost:3000/api/test
-@bearer = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDI2MjgxNiwiZXhwIjoxNzY0ODY3NjE2fQ.Uj2w_JHSZy8Mast4oANF3OWvdllPTDZ4lemcDTp480s
+@bearer = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjgzODgxZmI1ZThhMzYxZTBmNzUyZCIsImlhdCI6MTc2NDUxMDgyNSwiZXhwIjoxNzY1MTE1NjI1fQ.hrZNf64zyXtzDYPoM4Xorw7okoFbKueXLc1lS3USRFE
 @getId = 692852646c562d450bf3146f
 
 ### Create a new test

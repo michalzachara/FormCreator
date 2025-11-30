@@ -1,5 +1,5 @@
-// import Test from '../models/test.model.js';
-// import Question from '../models/question.model.js';
+import Test from '../models/test.model.js';
+import Question from '../models/question.model.js';
 
 export const addQuestion = async (req, res) => {
   const { id } = req.params;
@@ -82,9 +82,6 @@ export const editQuestion = async (req, res) => {
     return res.status(500).json({ message: 'Failed to edit question' });
   }
 };
-
-import Test from '../models/test.model.js';
-import Question from '../models/question.model.js';
 
 export const deleteQuestion = async (req, res) => {
   const { id } = req.params; 
