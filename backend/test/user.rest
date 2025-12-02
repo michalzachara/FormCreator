@@ -22,7 +22,3 @@ Content-Type: application/json
   "password": "Test123!"
 }
 
-###
-# Przykładowy request z autoryzacją JWT
-# GET http://localhost:5000/api/protected-route
-# Authorization: Bearer {{token}}
